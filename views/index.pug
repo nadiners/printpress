@@ -1,21 +1,42 @@
 include parts/header.pug	
 
 	.grid-container
-		a(href='about.html').grid-item.item1 About  Print/Press
-		a(href='pages/calendars.html').grid-item.item2 12 Calendars
-		.grid-item.item3 One Random Fact About Calendars
+		a(href='about.html').grid-item.item1 
+			svg
+				defs
+					path#wave(d='M10,10  q50,25 100,0 t100,0 100,0 100,0')
+				text(transform='translate(0,40)')
+					textpath(xlink:href='#wave', startoffset='0%') Welcome to
+				text(transform='translate(0,80)')
+					textpath(xlink:href='#wave', startoffset='5%') the Print/Press  
+				text(transform='translate(0,120)')
+					textpath(xlink:href='#wave', startoffset='10%') project!
+		a(href='techniques.html').grid-item.item2 Digital Printing Techniques 
+		a(href='').grid-item.item3 Personalisation
 		.grid-item.item4 
 			p#month
-			p#day
 			p#nbday
+			p#day
 			p#year
-		a(href='').grid-item.item5 12 Papers
-		a(href='').grid-item.item6 Many Variables
-		a(href='').grid-item.item7 Digital Printing Techniques
-		a(href='').grid-item.item8 12 Contributors
-		.grid-item.item9 Horoscope Generator
-		a(href='').grid-item.item10 Personalisation
-		a(href='').grid-item.item11 A brief overview of Digital Print
-		a(href='').grid-item.item12 Glossary
+		a(href='').grid-item.item5 A History of Digital Print 
+		a(href='').grid-item.item6 
+		a(href='').grid-item.item7 
+		.grid-item.item8 
+			p.horo 
+			hr
+			p.intro 	
+				span.count Taurus  
+				br
+				img(src='img/taurus.png' width='50%')
+				br
+				| A heralding Angel of the Lord will appear unto you, seem confused, ask the date, apologize for visiting a few years early, and tell you something really impersonal.
+		a(href='').grid-item.item9 12 Contributors	
+		a(href='pages/calendars.html').grid-item.item10 12 Calendars 
+			// img(src='img/heinz-variable.gif')
+		a(href='').grid-item.item11 
+			.layer 
+				p Xerox6500
+			img(src='img/Xerox6500.jpg' width='80%')
+		a(href='glossary.html').grid-item.item12 Glossary
 
 	

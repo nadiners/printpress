@@ -1,0 +1,50 @@
+include parts/header.pug	
+
+	.grid-container-about
+		.grid-item-about
+			.grid-item-about.item1
+				a(href='index.html')   
+					svg
+						defs
+							path#wave(d='M10,10  q50,25 100,0 t100,0 100,0 100,0')
+						text(transform='translate(0,40)')
+							textpath(xlink:href='#wave', startoffset='0%') Print/Press 
+			.grid-item-about  
+				ul.menu
+					li.menu-item 
+						a(href='about.html') About
+					li.menu-item 
+						a(href='')
+							span.m-on Digital Printing Techniques
+					li.menu-item 
+						a(href='') Personalisation
+					li.menu-item 
+						a(href='') A History of Print
+					li.menu-item 
+						a(href='') 12 Contributors
+					li.menu-item 
+						a(href='') 12 Calendars
+					li.menu-item 
+						a(href='glossary.html') Glossary
+			.grid-item-about  
+				p
+				| footer?
+		.grid-item-about
+			p.page-heading Digital Printing Techniques
+			.introduction Some text about the techniques we have found 
+			#accordion.active
+				h4.accordion-toggle Laser printing
+				.accordion-content.default
+					p Cras malesuada ultrices augue molestie risus.
+				h4.accordion-toggle Digital Offset
+				.accordion-content
+					p Lorem ipsum dolor sit amet mauris eu turpis.
+				h4.accordion-toggle Xerography
+				.accordion-content
+					p Vivamus facilisisnibh scelerisque laoreet.
+
+		//- .grid-item-about
+
+
+
+

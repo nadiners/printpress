@@ -1,102 +1,87 @@
-include parts/header.pug	
+include parts/header.pug
 
-	.grid-container
-		a(href='index.html').grid-item.item1  Print/Press
-		.grid-item.item2 
-			p.intro
-				span.count 1 
-				| In an effort to bridge the gap between  
-				strong designers 
-				| and 
-				strong digital printers 
-				| the 
-				em Print/Press 
-				| project will commission 12 independent designers to produce a 2019 calendar.
-		.grid-item.item3 
-			p.intro
-				span.count 2 
-				| The calendar will address the theme of  
-				strong personalisation. 
-				| In the era of big data, it is the contention of this project that work needs to be done to critically reflect on the implications of these techniques for the consumer.
-				br
-				br 
-				.
-					The calendar will be digitally printed using variable data techniques making it possible to produce a series of unique multiples for each design.
-
-		.grid-item.item4 
-			p.intro
-				span.count 3 
-				| The format of the publication is 
-				strong 6.8x8.5 inches 
-				| and each contributer gets 1 double-page spread. The possible variable elements are:
-				ul.variables
-					li TEXT
-					li IMAGE/S
-					li FONT/S 
-					li VECTOR/S 
-					li LAYOUT
-					li COLOUR/S
-		.grid-item.item5 
-			p.intro
-				span.count 4 
-				| Your contribution should include: 
-				ul.explanation
-					li At least one consistent element 
-					li At least one variable element
-					li As many versions of the variable element/s as you like (but no less than 12)
-		.grid-item.item6 
-			p.intro
-				span.count 5 
-				| A list of the contributors and their work will be published on the Press/Print website. 
-				br
-				All contributions must be received by the 
-				strong 8th of June, 2018.
-				br
-				| (More to follow soon)
-		.grid-item.item7 
-		.grid-item.item8 
-			img(src='img/heinz-variable.gif')
-		.grid-item.item9 
-			p.horo Horoscope
-			hr
-			p.intro 	
-				span.count Taurus  
+	.grid-container-about
+		.grid-item-about
+			.grid-item-about.item1
+				a(href='index.html')   
+					svg
+						defs
+							path#wave(d='M10,10  q50,25 100,0 t100,0 100,0 100,0')
+						text(transform='translate(0,40)')
+							textpath(xlink:href='#wave', startoffset='0%') About
+						text(transform='translate(0,80)')
+							textpath(xlink:href='#wave', startoffset='5%') Print/Press  
+			.grid-item-about  
+				ul.menu
+					li.menu-item
+						a(href='about.html')
+							span.m-on About
+					li.menu-item 
+						a(href='techniques.html') Digital Printing Techniques
+					li.menu-item 
+						a(href='') Personalisation
+					li.menu-item 
+						a(href='') A History of Print
+					li.menu-item 
+						a(href='') 12 Contributors
+					li.menu-item 
+						a(href='') 12 Calendars
+					li.menu-item 
+						a(href='glossary.html') Glossary
+			.grid-item-about  
+				p
+				| footer?
+		.grid-item-about
+			p.introduction Welcome  
+				span.name 
 				br
 				br
-				| A heralding Angel of the Lord will appear unto you, seem confused, ask the date, apologize for visiting a few years early, and tell you something really impersonal.
-		.grid-item.item10 
-			.grid-container-mini
-				.grid-item.item1-mini
-				.grid-item.item2-mini 
-				.grid-item.item3-mini g
-				.grid-item.item4-mini
-				.grid-item.item5-mini
-				.grid-item.item6-mini
-				.grid-item.item7-mini
-				.grid-item.item8-mini
-				.grid-item.item9-mini
-				.grid-item.item10-mini
-				.grid-item.item11-mini
-				.grid-item.item12-mini
-		.grid-item.item11 
-			p#month
-			p#day
-			p#nbday
-			p#year
-		.grid-item.item12 
-			p.intro
-				| confused
-				span.count ? 
-				| contact us
-				span.count !
+				| In an effort to bridge the gap between designers and digital printers the Print/Press project will commission 12 independent designers to produce a 2019 calendar. Developments in digital printing technology have introduced workflows taking advantage of 
+				span.gloss-word Variable Data 
+				| to customise design elements (text, colour, image and vector) within a print run. This technique brings with it the so-called 
+				span.gloss-word personalisation revolution 
+				| allowing multiple objects within a single print run to be branded using customer data. 
 				br
+				br
+				| While the take up of variable data and personalisation by big brands is widespread, our research shows that there is little evidence of these techniques being used by independent designers and artists. In the era of big data, it is the contention of this project that work needs to be done to critically reflect on the implications of these techniques for the consumer.
+				br
+				br
+				| To this end we will use the format of a typical example of personalisation merchandise – a 2019 calendar – to invite 12 independent designers (one designer for each calendar month) to work with variable data techniques and to critically reflect on the so-called 
+				span.gloss-word personalisation revolution.
+				br
+				br
+				| This Project is created by 
+				a(href='http://www.publishinglab.nl/print-press') PublishingLab (INC) 
 				br
 				| Oliver Barstow: 
-				strong oliver.barstow@sandberg.nl  
-				br
+				a(href='mailto:oliver.barstow@sandberg.nl') 
+					strong oliver.barstow@sandberg.nl  
 				br
 				| Nadine Rotem-Stibbe: 
-				strong nadine@rotem.eu
+				a(href='mailto:nadine@rotem.eu') 
+					strong nadine@rotem.eu
+				br
+				br
+				em Print/Press 
+				| is realised in collaboration with:
+				ul.explanation
+					li 
+						a(href='https://www.kvgo.nl/') KVGO
+					li 
+						a(href='https://sandberg.nl/') Sandberg Instituut 
+					li Aeroprint
+					li
+						a(href='https://jubels.nl/en/') Jubels 
+					li
+						a(href='https://hazenberg.nl/') Hazenberg 
+					li 
+						a(href='http://aenofondsgrafimedia.nl/') A&amp;O Fund Grafimediabranche
 
 
-	
+		.grid-item-about
+			img(src='img/taurus.png' width='80%')
+			img(src='img/vdp_1.jpg' width='80%')
+			img(src='img/Xerox6500.jpg' width='80%')
+
+
+
