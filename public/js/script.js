@@ -16,14 +16,8 @@ document.getElementById('nbday').innerHTML = nbday;
 
 
 // child -----------------------------
-var childNumber = 3;
-
-function addChild() {
-  var parent = document.getElementById('i-want-more-children');
-  var newChild = '<p>Child ' + childNumber + '</p>';
-  parent.insertAdjacentHTML('beforeend', newChild);
-  childNumber++;
-}
+// this script moved to public/js/child.js
+// and in called at the end of info.pug
 
 // collapsible -----------------------------
 // this script moved to public/js/collapse.js
