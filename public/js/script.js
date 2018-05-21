@@ -1,4 +1,4 @@
-//date 
+//date -----------------------------
 
 var date = new Date();
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -20,7 +20,7 @@ document.getElementById('month').innerHTML = month;
 document.getElementById('nbday').innerHTML = nbday; 
 
 
-// child
+// child -----------------------------
 var childNumber = 3;
 
 function addChild() {
@@ -30,17 +30,6 @@ function addChild() {
   childNumber++;
 }
 
-//collapsible
-
-  
-  $(document).ready(function($) {
-    $('#accordion').find('.accordion-toggle').click(function(){
-
-      //Expand or collapse this panel
-      $(this).next().slideToggle('slow');
-
-      //Hide the other panels
-      $(".accordion-content").not($(this).next()).slideUp('fast');
-
-    });
-  });
+// collapsible -----------------------------
+// this script moved to public/js/collapse.js
+// and in called at the end of techniques.pug
