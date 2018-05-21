@@ -8,11 +8,6 @@ var today = days[date.getDay()];
 var nbday = date.getDate() 
 var month = months[date.getMonth()] 
 var year = date.getFullYear() 
-  
-console.log(days[date.getDay()]);
-console.log(months[date.getMonth()]); 
-console.log(date.getDate());
-console.log(date.getFullYear());
 
 document.getElementById('day').innerHTML = today; 
 document.getElementById('year').innerHTML = year; 
