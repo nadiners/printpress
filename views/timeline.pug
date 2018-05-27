@@ -1,0 +1,79 @@
+include parts/header.pug  
+
+	.grid-container-timeline
+		.grid-item-about
+			.grid-item-about.item1
+				a(href='index.html')
+					svg
+						defs
+							path#wave(d='M10,10  q50,25 100,0 t100,0 100,0 100,0')
+						text(transform='translate(0,40)')
+							textpath(xlink:href='#wave', startoffset='0%') Print/Press 
+			.grid-item-about  
+				ul.menu
+					li.menu-item 
+						a(href='about.html') About
+					li.menu-item 
+						a(href='techniques.html') Techniques
+					li.menu-item 
+						a(href='') 
+							span.m-on Timeline
+					li.menu-item 
+						a(href='') Selection Tool
+					li.menu-item 
+						a(href='') Directory
+					li.menu-item 
+						a(href='') The Calendar Project
+					li.menu-item 
+						a(href='glossary.html') Glossary
+			.grid-item-about  
+				p
+				| footer?
+		.grid-item-about
+			p.page-heading A brief history of digital printing
+			.introduction from Xerox to cannon, from 1800 to today. Below is a timeline reviewing digital printers in chronological order. Jump to: 
+				a(href="#2012") 2012, 
+				a(href="#2018") 2018,  
+				a(href="#2018") 2018 
+				br
+				br
+				.container
+					.timeline
+						h2#2018 2018
+						ul
+							li
+								h3 Xerox 813
+								p
+									| One day, my boss came up to me and asked, 		"Are you ready, Joe?" Pretty much decided I 		wasn't ready.
+								time August 2013
+								img(src='assets/img/Xerox914a.jpg' width="100%")
+							li
+								h3 Started New Job
+								p
+									| Began work at the Button Factory. This was probably the best time of my life. I had a wife, a dog, and a family.
+								time July 2013
+								img(src='assets/img/Xerox813.jpg' width="100%")
+							li
+								h3 Changed my name to Joe
+								p I was just sick of Josh
+								time June 2013
+							li
+								h3 Moved to Iowa
+								p
+									| I moved to 
+									a(href='#') Ames, Iowa
+									|  and settled down into my new life.
+								time February 2013
+								img(src='assets/img/Canoni300.png' width="100%")
+						h2#2012 2012
+						ul
+							li
+								h3 Graduated College
+								p It only took, like, two years.
+								time December 2012
+							li
+								h3 Graduated Community College
+								p Studying Aerospace Engineering.
+								time May 2012
+		
+
