@@ -12,22 +12,7 @@ include parts/header.pug
 						text(transform='translate(0,80)')
 							textpath(xlink:href='#wave', startoffset='5%') Print/Press  
 			.grid-item-about  
-				ul.menu
-					li.menu-item 
-						a(href='')
-							span.m-on About
-					li.menu-item 
-						a(href='techniques.html') Techniques
-					li.menu-item 
-						a(href='timeline.html') Timeline
-					li.menu-item 
-						a(href='') Selection Tool
-					li.menu-item 
-						a(href='') Directory
-					li.menu-item 
-						a(href='') The Calendar Project
-					li.menu-item 
-						a(href='glossary.html') Glossary
+				include parts/menu.pug
 			.grid-item-about  
 				p
 				| footer?

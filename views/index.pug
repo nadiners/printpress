@@ -2,7 +2,7 @@ include parts/header.pug
 
 	.grid-container-about
 		.grid-item-about
-			a(href='about.html') 
+			a(href='about.html')
 				svg
 					defs
 						path#wave(d='M10,10  q50,25 100,0 t100,0 100,0 100,0')
@@ -12,22 +12,7 @@ include parts/header.pug
 						textpath(xlink:href='#wave', startoffset='5%')  Print/Press!  
 					p.tagline A Resource for Digital Print
 			.grid-item-about  
-				ul.menu
-					li.menu-item 
-						a(href='about.html') About
-					li.menu-item 
-						a(href='')
-							span.m-on Techniques
-					li.menu-item 
-						a(href='timeline.html') Timeline
-					li.menu-item 
-						a(href='') Selection Tool
-					li.menu-item 
-						a(href='') Directory
-					li.menu-item 
-						a(href='') The Calendar Project
-					li.menu-item 
-						a(href='glossary.html') Glossary
+				include parts/menu.pug
 			.grid-item-about  
 				p
 				| footer?
@@ -49,7 +34,7 @@ include parts/header.pug
 			p#nbday
 			p#day
 			p#year
-
+		script(src='assets/js/script.js')
 
 
 
